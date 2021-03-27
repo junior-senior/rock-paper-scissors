@@ -8,3 +8,4 @@ class Data:
 
     def load_player_data(self, player):
         with open(self.data_file) as f:
+            ...

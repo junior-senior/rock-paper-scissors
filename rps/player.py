@@ -19,7 +19,7 @@ class HumanPlayer(Player):
         self.password = ''
 
 
-class MediumAIPlayer(Player):
+class AIPlayer(Player):
     def random_move(self):
         move = random.choice(list(self.move_set.values()))
         return move
