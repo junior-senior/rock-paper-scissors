@@ -10,16 +10,16 @@ class Player:
     def __init__(self):
         self.name = ''
         self.current_score = 0
-        self.move_set = {'r': 1, 'p': 2, 's': 3}
+        self.move_set = ['r', 'p', 's']
 
 
 class HumanPlayer(Player):
-    def __init__(self):
+    def __init__(self, name):
         super().__init__()
         self.password = ''
 
 
 class AIPlayer(Player):
     def random_move(self):
-        move = random.choice(list(self.move_set.values()))
+        move = random.choice(list(self.move_set))
         return move
