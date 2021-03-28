@@ -21,7 +21,6 @@ player_name = input('Please enter your name. ')
 human = p.HumanPlayer(player_name)
 saved_data = None
 
-
 print(f'Hello {player_name}.')
 player_has_saved_data, player_data = d.load_data(player_name)
 
@@ -36,12 +35,12 @@ while num_rounds == 0:
 
 game = g.Game(num_rounds, human)
 
-if player_data[str(num_rounds)]:
-    print(f'The current high score for {num_rounds} rounds is {player_data[str(num_rounds)]}')
+if player_data:
+    print(f'The current high score is {player_data}')
 
 # Main game loop
 while current_round < num_rounds:
-    print(f'The current score is: You {game.human_wins}:{game.ai_wins} Computer')
+    print(f'The current score is: You {game.human_wins}-{game.ai_wins} Computer')
     # While loop to make sure user enters an valid move
     while not valid_player_move:
         player_move = input(f'Please choose your move from: {move_set_dict} ').lower()
@@ -69,6 +68,8 @@ while current_round < num_rounds:
         assert False
     valid_player_move = False
 else:
-    print(f'The final score is: You {game.human_wins}:{game.ai_wins} Computer')
+    print(f'The final score is: You {game.human_wins}-{game.ai_wins} Computer')
+    data_to_save = f'{game.human_wins}-{game.ai_wins}'
+    d.save_data(human.name, data_to_save)
 
 

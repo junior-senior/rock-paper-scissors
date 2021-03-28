@@ -1,4 +1,3 @@
-
 def load_data(player):
     saved_data = None
     player_found = False
@@ -8,9 +7,33 @@ def load_data(player):
         for data in saved_data:
             if player in data.split(',')[0]:
                 player_found = True
-                player_data = data.split(',')[1:]
-                if player_data:
-                    player_data_dict = {data.split(':')[0].strip(): data.split(':')[1].strip()
-                                        for data in player_data}
-            return player_found, player_data_dict
+                player_data = data.split(', ')[1]
+            return player_found, player_data
 
+
+def save_data(player, player_data):
+
+    player_found = False
+    saved_data = None
+    new_data = []
+    match_score = int(player_data.split('-')[0])
+    with open('../saved_data.txt') as f:
+        saved_data = f.readlines()
+        for i, data in enumerate(saved_data):
+            if player in data.split(',')[0] and i > 0: # If the player is on that line and it is not the first line.
+                player_found = True
+                highest_human_score = int(data.split(', ')[1].split('-')[0])
+                if match_score > highest_human_score: # If the player's last highest score is greater than the last
+                    new_data.append(player + ', ' + player_data + '\n')
+                else:  # If it wasn't use the old data
+                    new_data.append(data)
+            else:  # If the player wasn't found or it's the header line
+                new_data.append(data)
+        else:
+            if not player_found:  # If the player wasn't found (New player)
+                new_data.append(player + ', ' + player_data + '\n')
+
+    # Write updated data to file
+    with open('../saved_data.txt', 'w') as f:
+        for line in new_data:
+            f.writelines(line)
