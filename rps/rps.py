@@ -8,7 +8,7 @@ import game as g
 ai_player = p.AIPlayer()
 num_rounds = 0
 current_round = 0
-move_set = ['Rock (r/R)', 'Paper (p/P)', 'Scissors (s/S)']
+move_set_dict = {'r': 'Rock', 'p': 'Paper', 's': 'Scissors'}
 
 valid_player_move = False
 player_move = ''
@@ -17,10 +17,17 @@ player_move = ''
 print('Welcome to Rock, Paper, Scissors.')
 
 player_name = input('Please enter your name. ')
-human = p.HumanPlayer(player_name)
-game = g.Game(num_rounds, human)
+human = p.HumanPlayer()
+saved_data = None
+
+with open('../saved_data.txt') as f:
+    saved_data = f.readlines()[1:]
 
 print(f'Hello {player_name}.')
+if player_name in saved_data:
+    print('found')
+
+# While loop to make sure user enters a valid number
 while num_rounds == 0:
     num_rounds = input('Please enter the number of rounds you would like to play. ')
     try:
@@ -29,10 +36,15 @@ while num_rounds == 0:
         print('Please enter a valid integer.')
         num_rounds = 0
 
+game = g.Game(num_rounds, human)
+# Main game loop
 while current_round < num_rounds:
     print(f'The current score is: You {game.human_wins}:{game.ai_wins} Computer')
+    # While loop to make sure user enters an valid move
     while not valid_player_move:
-        player_move = input(f'Please choose your move from: {move_set} ').lower()
+        player_move = input(f'Please choose your move from: {move_set_dict} ').lower()
+        if len(player_move) > 1:
+            player_move = player_move[0]
         if player_move in human.move_set:
             valid_player_move = True
         else:
@@ -40,16 +52,17 @@ while current_round < num_rounds:
                   '\'p\' or \'P\' for Paper, \'s\' or \'S\' for Scissors. ')
     ai_move = ai_player.random_move()
     result = game.round_result(player_move, ai_move)
+
     if result == 1:
-        print(f'{player_move} beats {ai_move}. You win this round.')
+        print(f'{move_set_dict[player_move]} beats {move_set_dict[ai_move].lower()}. You win this round.\n')
         current_round += 1
         game.human_wins += 1
     elif result == -1:
-        print(f'{ai_move} beats {player_move}. The Computer wins this round.')
+        print(f'{move_set_dict[ai_move]} beats {move_set_dict[player_move].lower()}. The Computer wins this round.\n')
         current_round += 1
         game.ai_wins += 1
     elif result == 0:
-        print('It is a draw! Play the round again')
+        print('It is a draw! Play the round again.\n')
     else:
         assert False
     valid_player_move = False

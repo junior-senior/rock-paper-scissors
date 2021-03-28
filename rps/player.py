@@ -14,7 +14,7 @@ class Player:
 
 
 class HumanPlayer(Player):
-    def __init__(self, name):
+    def __init__(self):
         super().__init__()
         self.password = ''
 
