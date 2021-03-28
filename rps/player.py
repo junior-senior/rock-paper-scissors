@@ -8,15 +8,15 @@ import random
 
 class Player:
     def __init__(self):
-        self.name = ''
         self.current_score = 0
         self.move_set = ['r', 'p', 's']
 
 
 class HumanPlayer(Player):
-    def __init__(self):
+    def __init__(self, name):
         super().__init__()
-        self.password = ''
+        self.name = name
+
 
 
 class AIPlayer(Player):

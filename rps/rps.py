@@ -4,6 +4,7 @@ This is the main script for the game. It defines the player input, and the main 
 
 import player as p
 import game as g
+import data as d
 
 ai_player = p.AIPlayer()
 num_rounds = 0
@@ -17,15 +18,12 @@ player_move = ''
 print('Welcome to Rock, Paper, Scissors.')
 
 player_name = input('Please enter your name. ')
-human = p.HumanPlayer()
+human = p.HumanPlayer(player_name)
 saved_data = None
 
-with open('../saved_data.txt') as f:
-    saved_data = f.readlines()[1:]
 
 print(f'Hello {player_name}.')
-if player_name in saved_data:
-    print('found')
+player_has_saved_data, player_data = d.load_data(player_name)
 
 # While loop to make sure user enters a valid number
 while num_rounds == 0:
@@ -37,6 +35,10 @@ while num_rounds == 0:
         num_rounds = 0
 
 game = g.Game(num_rounds, human)
+
+if player_data[str(num_rounds)]:
+    print(f'The current high score for {num_rounds} rounds is {player_data[str(num_rounds)]}')
+
 # Main game loop
 while current_round < num_rounds:
     print(f'The current score is: You {game.human_wins}:{game.ai_wins} Computer')
