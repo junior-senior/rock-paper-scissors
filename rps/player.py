@@ -16,7 +16,7 @@ class Player:
 class HumanPlayer(Player):
     """The human player only current has the name attribute. This will be expanded upon as the program is developed
         Args:
-            :param Name (str): This is the player's name
+            :param name: This is the player's name
     """
     def __init__(self, name):
         super().__init__()

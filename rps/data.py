@@ -18,10 +18,9 @@ def load_data(player):
 
 def save_data(player, player_data):
     """
-    This function is called once the number of rounds have been played.
+    This function is called once the specified number of rounds have been played.
     :param player: The name of the human who was playing the game.
     :param player_data: The score of the match.
-    :return: Nothing
     """
     player_found = False
     saved_data = None
