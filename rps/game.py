@@ -23,5 +23,9 @@ class Game:
         :param player2_move: The move chosen by the AI player.
         :return: 1 for a user win, 0 for a tie and -1 for an AI win.
         """
-        result = self.result_dict[player1_move][player2_move]
-        return result
+        try:
+            result = self.result_dict[player1_move][player2_move]
+        except KeyError:
+            print('Invalid Move')
+        else:
+            return result

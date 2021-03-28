@@ -12,7 +12,9 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('../..'))
+for x in os.walk('..'):
+    sys.path.insert(0, os.path.abspath(x[0]))
+
 
 # -- Project information -----------------------------------------------------
 

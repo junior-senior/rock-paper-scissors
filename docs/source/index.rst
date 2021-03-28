@@ -10,10 +10,9 @@ Welcome to Rock, Paper, Scissors!'s documentation!
    :maxdepth: 2
    :caption: Contents:
 
-.. automodule:: rps::data
+.. automodule:: data
 .. automodule:: game
 .. automodule:: player
-.. automodule:: rps
 
 
 Indices and tables

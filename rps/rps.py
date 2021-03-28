@@ -65,7 +65,7 @@ while current_round < num_rounds:
     else:
         assert False
     valid_player_move = False
-else:
+else:  # Using a while else to ensure that data is only saved if the program completes correctly.
     print(f'The final score is: You {game.human_wins}-{game.ai_wins} Computer')
     data_to_save = f'{game.human_wins}-{game.ai_wins}'
     d.save_data(human.name, data_to_save)
