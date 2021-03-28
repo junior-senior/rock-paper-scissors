@@ -1,4 +1,9 @@
 def load_data(player):
+    """
+    This function is called after the user has entered their name to determine whether they have a high score saved.
+    :param player: The name of the human who was playing the game.
+    :return: player_found bool, player_data, which is the highest score the player has achieved.
+    """
     saved_data = None
     player_found = False
     player_data = None
@@ -12,7 +17,12 @@ def load_data(player):
 
 
 def save_data(player, player_data):
-
+    """
+    This function is called once the number of rounds have been played.
+    :param player: The name of the human who was playing the game.
+    :param player_data: The score of the match.
+    :return: Nothing
+    """
     player_found = False
     saved_data = None
     new_data = []

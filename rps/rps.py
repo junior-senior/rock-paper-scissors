@@ -10,10 +10,8 @@ ai_player = p.AIPlayer()
 num_rounds = 0
 current_round = 0
 move_set_dict = {'r': 'Rock', 'p': 'Paper', 's': 'Scissors'}
-
 valid_player_move = False
 player_move = ''
-
 
 print('Welcome to Rock, Paper, Scissors.')
 
