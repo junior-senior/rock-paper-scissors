@@ -1,24 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d6938e73-8ba2-4f5f-b648-6742ee37533e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/rock-paper-scissors.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/make.bat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/make.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/source/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/source/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rps/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/rps/data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rps/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/rps/game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rps/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/rps/player.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rps/rps.py" beforeDir="false" afterPath="$PROJECT_DIR$/rps/rps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rps/tests/test_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/rps/tests/test_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/rock-paper-scissors.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rock-paper-scissors.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rps/tests/test_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/rps/tests/test_game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/saved_data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/saved_data.txt" afterDir="false" />
     </list>
@@ -37,7 +52,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RunManager">
     <configuration name="rps" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -76,55 +93,71 @@
       <option name="presentableId" value="Default" />
       <updated>1616998867135</updated>
     </task>
+    <task id="LOCAL-00001" summary="Return statement one indent too far">
+      <created>1616999105689</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1616999105689</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Return statement one indent too far" />
+    <option name="LAST_COMMIT_MESSAGE" value="Return statement one indent too far" />
   </component>
   <component name="WindowStateProjectService">
     <state x="454" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616998898085">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="454" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1616998898085" />
-    <state width="1825" height="340" key="GridCell.Tab.0.bottom" timestamp="1616999026616">
+    <state width="1825" height="340" key="GridCell.Tab.0.bottom" timestamp="1616999333838">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1825" height="340" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1616999026616" />
-    <state width="1825" height="340" key="GridCell.Tab.0.center" timestamp="1616999026616">
+    <state width="1825" height="340" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1616999333838" />
+    <state width="1825" height="340" key="GridCell.Tab.0.center" timestamp="1616999333838">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1825" height="340" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1616999026616" />
-    <state width="1825" height="340" key="GridCell.Tab.0.left" timestamp="1616999026615">
+    <state width="1825" height="340" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1616999333838" />
+    <state width="1825" height="340" key="GridCell.Tab.0.left" timestamp="1616999333837">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1825" height="340" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1616999026615" />
-    <state width="1825" height="340" key="GridCell.Tab.0.right" timestamp="1616999026616">
+    <state width="1825" height="340" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1616999333837" />
+    <state width="1825" height="340" key="GridCell.Tab.0.right" timestamp="1616999333838">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1825" height="340" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1616999026616" />
-    <state width="1825" height="340" key="GridCell.Tab.1.bottom" timestamp="1616999031286">
+    <state width="1825" height="340" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1616999333838" />
+    <state width="1825" height="340" key="GridCell.Tab.1.bottom" timestamp="1616999333839">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1825" height="340" key="GridCell.Tab.1.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1616999031286" />
-    <state width="1825" height="340" key="GridCell.Tab.1.center" timestamp="1616999031286">
+    <state width="1825" height="340" key="GridCell.Tab.1.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1616999333839" />
+    <state width="1825" height="340" key="GridCell.Tab.1.center" timestamp="1616999333838">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1825" height="340" key="GridCell.Tab.1.center/72.27.1848.1053@72.27.1848.1053" timestamp="1616999031286" />
-    <state width="1825" height="340" key="GridCell.Tab.1.left" timestamp="1616999031285">
+    <state width="1825" height="340" key="GridCell.Tab.1.center/72.27.1848.1053@72.27.1848.1053" timestamp="1616999333838" />
+    <state width="1825" height="340" key="GridCell.Tab.1.left" timestamp="1616999333838">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1825" height="340" key="GridCell.Tab.1.left/72.27.1848.1053@72.27.1848.1053" timestamp="1616999031285" />
-    <state width="1825" height="340" key="GridCell.Tab.1.right" timestamp="1616999031286">
+    <state width="1825" height="340" key="GridCell.Tab.1.left/72.27.1848.1053@72.27.1848.1053" timestamp="1616999333838" />
+    <state width="1825" height="340" key="GridCell.Tab.1.right" timestamp="1616999333838">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1825" height="340" key="GridCell.Tab.1.right/72.27.1848.1053@72.27.1848.1053" timestamp="1616999031286" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/rps/rps.py</url>
-          <line>22</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state width="1825" height="340" key="GridCell.Tab.1.right/72.27.1848.1053@72.27.1848.1053" timestamp="1616999333838" />
+    <state x="485" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1616999515974">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="485" y="188" width="1022" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1616999515974" />
   </component>
 </project>
