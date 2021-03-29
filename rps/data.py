@@ -13,7 +13,7 @@ def load_data(player):
             if player in data.split(',')[0]:
                 player_found = True
                 player_data = data.split(', ')[1]
-            return player_found, player_data
+        return player_found, player_data
 
 
 def save_data(player, player_data):
